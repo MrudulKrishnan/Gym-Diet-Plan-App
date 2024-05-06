@@ -1,0 +1,47 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'expert/expert_index.html' %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="{% url 'add_and_manage_video_search' %}#about">
+  <table width="431" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="5">Search Titile
+      <input type="text" name="video" value="{{ search_video }}" />
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="31">Video</td>
+      <td width="47">Description</td>
+      <td width="47">Title</td>
+        <td width="47">Date</td>
+      <td width="278">&nbsp;</td>
+    </tr>
+      {% for i in video_obj %}
+    <tr>
+      <td>&nbsp;<video width="320" height="240" controls>
+  <source src="{{ i.Video.url }}" type="video/mp4">
+Your browser does not support the video tag.
+</video></td>
+      <td>&nbsp;{{ i.Description }}</td>
+      <td>&nbsp;{{ i.Title }}</td>
+        <td>&nbsp;{{ i.Date }}</td>
+      <td><p><a href="{% url 'update_video' video_id=i.id %}#about">Update</a></p>
+      <p><a href="{% url 'delete_video' video_id=i.id %}">Delete</a></p></td>
+    </tr>
+      {% endfor %}
+    <tr>
+      <td colspan="5"><div align="center">
+       <a href="{% url 'add_new_video' %}#about">Add new video</a>
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

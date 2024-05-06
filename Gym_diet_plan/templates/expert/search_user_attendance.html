@@ -1,0 +1,27 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'expert/expert_index.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="{% url 'view_attendance_user' %}#about">
+  <table width="200" border="1" class="table table-dark table-hover">
+    <tr>
+      <td>Student 
+        <select name="select">
+            {% for i in user_obj %}
+            <option value="{{ i.USER_ID.id }}">{{ i.USER_ID.FirstName }} {{ i.USER_ID.LastName }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

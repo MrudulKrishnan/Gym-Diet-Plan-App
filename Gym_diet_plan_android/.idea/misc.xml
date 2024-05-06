@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_send_complaints_view_reply.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_view_attendance.xml" value="0.934010152284264" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_view_exercise_video.xml" value="0.22" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_view_progress.xml" value="0.33" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_view_tips.xml" value="1.0" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_custom_view_video.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_main.xml" value="0.15307971014492755" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_registration.xml" value="0.33" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_send_complaints_view_reply.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_send_feedback.xml" value="0.1" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_sent_complaint.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_view_attendance.xml" value="0.14375" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_view_exercise_video.xml" value="0.15307971014492755" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_view_progress.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_view_tips.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym Diet Plan App/Gym_diet_plan_android/app/src/main/res/layout/activity_view_video.xml" value="0.17255434782608695" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym_diet_plan_android/app/src/main/res/layout/activity_home.xml" value="0.1453804347826087" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym_diet_plan_android/app/src/main/res/layout/activity_login.xml" value="0.1453804347826087" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym_diet_plan_android/app/src/main/res/layout/activity_main.xml" value="0.1453804347826087" />
+        <entry key="..\:/WORK/PROGRAM FILES/PROJECTS/Gym_diet_plan_android/app/src/main/res/layout/activity_registration.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

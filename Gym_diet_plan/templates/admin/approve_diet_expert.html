@@ -1,0 +1,56 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="{% url 'approve_diet_expert_view_search' %}#about">
+  <table width="451" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="9">Expert 
+      <input type="text" name="search" value="{{ Search }}" />
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="9">Name</td>
+      <td width="16">Experience</td>
+      <td width="16">Age</td>
+      <td width="16">Gender</td>
+      <td width="16">Address</td>
+      <td width="16">Phone</td>
+      <td width="16">Email</td>
+      <td width="16">Photo</td>
+      <td width="272">&nbsp;</td>
+    </tr>
+      {% for i in trainer_obj %}
+    <tr>
+      <td>&nbsp;{{ i.FirstName}} {{ i.LastName}}</td>
+      <td>&nbsp;{{ i.Experience}}</td>
+      <td>&nbsp;{{ i.Age}}</td>
+      <td>&nbsp;{{ i.Gender}}</td>
+      <td>&nbsp;{{ i.Place}}, {{ i.Post}}, {{ i.Pin}}</td>
+      <td>&nbsp;{{ i.Phone}}</td>
+      <td>&nbsp;{{ i.Email}}</td>
+      <td>&nbsp;<img src="{{ i.Photo.url }}" alt="error" style="width: 50px; height: 50px"/></td>
+      <td>
+          {% if i.LOGIN_ID.Type == "pending" %}
+            <p><a href="{% url 'accept_trainer' trainer_id=i.id %}">Accept</a></p>
+            <p><a href="{% url 'reject_trainer' trainer_id=i.id %}">Reject</a></p>
+          {% elif i.LOGIN_ID.Type == "trainer" %}
+            <p>Accepted</p>
+          {% else %}
+            <p>Rejected</p>
+          {% endif %}
+      </td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

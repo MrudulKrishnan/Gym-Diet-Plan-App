@@ -1,0 +1,49 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="add_new_food_action">
+  <table width="280" border="1" class="table table-dark table-hover">
+    <tr>
+      <td width="89">Food name </td>
+      <td width="175"><input type="text" name="Food_name" /></td>
+    </tr>
+    <tr>
+      <td>Food Type </td>
+      <td><select name="Food_Type">
+          <option>Fruits</option>
+          <option>Vegetables</option>
+          <option>Meats</option>
+          <option>Seafood</option>
+          <option>Dairy</option>
+          <option>Sweets</option>
+          <option>Beverages</option>
+          <option>Fast Food</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td><input type="text" name="Time" required/></td>
+    </tr>
+    <tr>
+      <td>Quantity</td>
+      <td><input type="text" name="Quantity" required/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">
+        <input type="submit" name="Submit" value="Add food " />
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

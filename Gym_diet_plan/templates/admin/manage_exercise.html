@@ -1,0 +1,48 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="{% url 'manage_exercise_search' %}#about">
+  <table width="363" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="5">Search exercise
+        <input type="text" name="search_exercise" value="{{ search }}" />
+        <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td width="53">Name</td>
+      <td width="55">Type</td>
+      <td width="64">Details</td>
+      <td width="86">Video</td>
+      <td width="71">&nbsp;</td>
+    </tr>
+      {% for i in exercise_obj %}
+    <tr>
+      <td>&nbsp;{{ i.ExerciseName }}</td>
+      <td>&nbsp;{{ i.ExerciseType }}</td>
+      <td>&nbsp;{{ i.ExerciseDetails }}</td>
+      <td>&nbsp;<video width="320" height="240" controls>
+  <source src="{{ i.ExerciseVideo.url }}" type="video/mp4">
+Your browser does not support the video tag.
+</video></td>
+      <td><p><a href="{% url 'update_exercise' exercise_id=i.id %}#about">Update</a></p>
+      <p><a href="{% url 'delete_exercise' exercise_id=i.id %}">Delete</a></p></td>
+    </tr>
+      {% endfor %}
+    <tr>
+      <td colspan="5"><div align="center">
+        <a href="{% url 'add_new_exercise' %}#about">Add new exercise</a>
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

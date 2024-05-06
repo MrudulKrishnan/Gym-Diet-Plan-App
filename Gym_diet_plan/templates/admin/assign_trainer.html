@@ -1,0 +1,47 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="{% url 'assign_trainer_search' %}#about">
+  <table width="200" border="1" class="table table-dark table-hover">
+    <tr>
+      <td colspan="9">Search Trainer 
+      <input type="text" name="trainer_name" value="{{ search }}" />
+      <input type="submit" name="Submit" value="Search" /></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Experience</td>
+      <td>Gender</td>
+      <td>Address</td>
+      <td>Phone</td>
+      <td>Email</td>
+      <td>Photo</td>
+      <td>&nbsp;</td>
+    </tr>
+      {% for i in trainer_obj %}
+    <tr>
+      <td>&nbsp;{{ i.FirstName }} {{ i.LastName }}</td>
+      <td>&nbsp;{{ i.Age }}</td>
+      <td>&nbsp;{{ i.Experience }}</td>
+      <td>&nbsp;{{ i.Gender }}</td>
+      <td>&nbsp;{{ i.Place }}, {{ i.Post }}, {{ i.Pin }}</td>
+      <td>&nbsp;{{ i.Phone }}</td>
+      <td>&nbsp;{{ i.Email }}</td>
+      <td>&nbsp;<img src="{{ i.Photo.url }}" alt="error" style="height: 50px;width: 50px"/></td>
+      <td><a href="{% url 'assign_trainer_action' trainer_id=i.id %}#about">Assign</a></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

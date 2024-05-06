@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gym"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <Button
+        android:id="@+id/B1_DietChartPrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diet chart prediction and forword to diet expert" />
+
+    <Button
+        android:id="@+id/B2_ReviewProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review progress" />
+
+    <Button
+        android:id="@+id/B3_SendFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send feedback" />
+
+    <Button
+        android:id="@+id/B10_ViewExerciseVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise video" />
+
+    <Button
+        android:id="@+id/B4_ViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos" />
+
+    <Button
+        android:id="@+id/B5_ComplintReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send complaint and view replay" />
+
+    <Button
+        android:id="@+id/B6_ViewTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View tips" />
+
+    <Button
+        android:id="@+id/B7_ViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view attendance" />
+
+    <Button
+        android:id="@+id/B8_ChatBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chatbot" />
+
+    <Button
+        android:id="@+id/B9_Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+</LinearLayout>

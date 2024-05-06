@@ -1,0 +1,34 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{##}
+{#<body>#}
+{% extends 'expert/expert_index.html' %}
+{% block body %}
+<form action="/update_video_action" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="200" border="1" class="table table-dark table-hover">
+    <tr>
+      <td>Title</td>
+      <td><input type="text" name="Title"  value="{{ video_obj.Title }}" required/></td>
+    </tr>
+    <tr>
+      <td>Video</td>
+      <td><input type="file" name="Video" required/></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><input type="text" name="Description" value="{{ video_obj.Description }}" required/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">
+        <input type="submit" name="Submit" value="Add video" />
+      </div></td>
+    </tr>
+  </table>
+</form>
+{#</body>#}
+{#</html>#}
+{% endblock %}

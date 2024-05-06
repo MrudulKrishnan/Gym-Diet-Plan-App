@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form action="registration_action" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="200" border="1" class="table table-dark table-hover">
+    <tr>
+      <td>First name </td>
+      <td><input type="text" name="First_name" required pattern="[A-Z a-z.]{3,25}"/></td>
+    </tr>
+    <tr>
+      <td>Last name </td>
+      <td><input type="text" name="Last_name" pattern="[A-Z a-z.]{3,25}"/></td>
+    </tr>
+    <tr>
+      <td>Experience</td>
+      <td><input type="text" name="Experience" pattern="[0-9]{0,90}"/></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td><input type="text" name="Age" r/></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td><input name="Gender" type="radio" value="Male" />
+        Male 
+        <input name="Gender" type="radio" value="Female" />
+        Female </td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><input type="text" name="Place" /></td>
+    </tr>
+    <tr>
+      <td>Post</td>
+      <td><input type="text" name="Post" /></td>
+    </tr>
+    <tr>
+      <td>Pin</td>
+      <td><input type="text" name="Pin" /></td>
+    </tr>
+    <tr>
+      <td>Phone </td>
+      <td><input type="text" name="Phone" /></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" name="Email" /></td>
+    </tr>
+    <tr>
+      <td>Photo</td>
+      <td>
+          <input type="file" name="Photo" />
+      </td>
+    </tr>
+    <tr>
+      <td>Username</td>
+      <td><input type="text" name="Username" /></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="text" name="Password" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><div align="center">
+        <input type="submit" name="Submit" value="Submit" />
+      </div></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
